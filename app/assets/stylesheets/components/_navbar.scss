@@ -10,3 +10,17 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-lewagon1 {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon1 .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon1 .navbar-brand img {
+  width: 40px;
+}
+
