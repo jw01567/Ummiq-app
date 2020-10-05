@@ -1,0 +1,5 @@
+<ul>
+  <% @furnitures.each do |furniture| %>
+    <li><%= link_to furniture.name, furniture_path(furniture) %></li>
+  <% end %>
+</ul>

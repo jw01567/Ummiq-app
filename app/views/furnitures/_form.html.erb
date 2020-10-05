@@ -1,0 +1,13 @@
+<%= form_for(@furniture) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.label :measure %>
+  <%= f.text_field :measure %>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <%= f.submit %>
+<% end %>
