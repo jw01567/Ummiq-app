@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #a6a6a4;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,16 +11,26 @@
   width: 40px;
 }
 
-.navbar-lewagon1 {
+.navbar-Up {
+  display: flex;
   justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon1 .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon1 .navbar-brand img {
-  width: 40px;
+  align-items: center;
+  background: black;
+  height: 60px;
+  .contacts{
+    color: white;
+    line-height: 2px;
+    font-size: 12px;
+  }
+ .slogan{
+    color: white;
+    line-height: 2px;
+    font-size: 12px;
+  }
+  .help{
+    color: white;
+    line-height: 2px;
+    font-size: 12px;
+  }
 }
 
