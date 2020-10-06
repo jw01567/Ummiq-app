@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #686d76;
+  background: #f6f5f5;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: #132743;
   height: 60px;
   .contacts{
     color: white;
