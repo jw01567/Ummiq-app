@@ -1,3 +1,6 @@
-<h2><%= @furniture.name %></h2>
-<p><%= @furniture.description %></p>
-<p><%= @furniture.price %></p>
+<div class="container">
+  <h2 class="mt-5"><%= @furniture.name %></h2>
+  <p><%= @furniture.description %></p>
+  <p><%= @furniture.price %></p>
+  <%= link_to "Back", furnitures_path %>
+</div>
