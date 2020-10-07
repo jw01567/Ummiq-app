@@ -1,6 +1,10 @@
 <div class="container">
-  <h2 class="mt-5"><%= @furniture.name %></h2>
+  <h1 class="mt-5"><%= @furniture.name %></h1>
+  <h4><strong>Description:</strong></h4>
   <p><%= @furniture.description %></p>
+  <h4><strong>Measures:</strong></h4>
+  <p> <%= @furniture.measure %> </p>
+  <h4><strong>Price:</strong></h4>
   <p><%= @furniture.price %> € TTC</p>
   <%= link_to "Back", furnitures_path %>
 </div>
