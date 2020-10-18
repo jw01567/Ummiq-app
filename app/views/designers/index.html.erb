@@ -1,0 +1,8 @@
+<div class="container">
+
+  <% @designers.each do |designer| %>
+    <h2><%= designer.name %></h2>
+  <% end  %>
+
+  <%= link_to "Add a designer", new_designer_path %>
+</div>
