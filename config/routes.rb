@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :furnitures
   resources :accessories
   resources :designers
+  resources :lights
 end
