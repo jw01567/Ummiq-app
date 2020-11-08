@@ -1,13 +1,14 @@
 <div class="container">
 
   <% @designers.each do |designer| %>
-    <h2><%= designer.name %></h2>
+    <%= link_to designer_path(designer) do %>
+      <div class="cards">
+        <div class="card-category mt-5 mb-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
+          <%= designer.name %>
+        </div>
+      </div>
+    <% end %>
   <% end  %>
-  <div class="cards">
-    <div class="card-category mt-5 mb-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
-      Michel Platini
-    </div>
-  </div>
 
   <%= link_to "Add a designer", new_designer_path %>
 </div>
