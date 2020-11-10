@@ -8,8 +8,8 @@
   position: relative;
   width: 60vw;
   height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
+  max-width: 480px;
+  max-height: 350px;
   margin: 0;
   color: white;
   perspective: 1000px;
@@ -41,8 +41,8 @@
     bottom: 0;
     width: 60vw;
     height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
+    max-width: 480px;
+    max-height: 350px;
     box-shadow: 0 5px 20px rgba(0,0,0,.1);
     border-radius: 6px;
     transform-origin: center;
@@ -65,7 +65,7 @@
 }
 
 .icon-cards__item > img {
-  height: 250px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
 }
@@ -160,5 +160,9 @@
   to { transform: scale(1, 1); }
 }
 
+.furniture {
+  display: flex;
+  justify-content: space-between;
+}
 
 
