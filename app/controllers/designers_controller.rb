@@ -37,7 +37,7 @@ class DesignersController < ApplicationController
   end
 
   def furniture_params
-    params.require(:designer).permit(:name, :description)
+    params.require(:designer).permit(:name, :description, :photo)
   end
 
 end
