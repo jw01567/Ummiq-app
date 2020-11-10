@@ -26,6 +26,14 @@
       <p><%= @furniture.price %> € TTC</p>
     </div>
   </div>
+
+  <%= link_to furniture_path(@furniture), method: :delete, data: { confirm: "Are you sure?" } do %>
+    <i class=" link far fa-trash-alt" style="font-size: 20px;"></i>
+  <% end  %>
+  <%= link_to edit_furniture_path(@furniture) do %>
+    <i class="fas fa-pen" style="font-size: 17px;"></i>
+  <% end %>
+
   <div class="mb-3">
     <%= link_to "Back", furnitures_path %>
   </div>
