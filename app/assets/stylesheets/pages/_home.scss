@@ -2,6 +2,16 @@
 .carousel {
 width: 100%;
 }
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .card-coeur {
   overflow: hidden;
   background: white;
@@ -46,7 +56,8 @@ width: 100%;
   background: #132743;
   color: white;
   height: 250px;
-
 }
 
-
+.link-not-blue a:hover {
+  opacity: 1;
+}
