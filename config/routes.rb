@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :accessories
   resources :designers
   resources :lights
+  resources :decorations
 end
