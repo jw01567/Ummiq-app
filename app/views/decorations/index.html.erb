@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="product-cards mt-4">
+    <% @decorations.each do |decoration| %>
+      <%= link_to decoration_path(decoration) do %>
+        <div class="card mr-2" style="width: 20rem;">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="Card image cap">
+          <div class="card-body">
+            <div>
+              <h5 class="card-title"><%= decoration.name.capitalize %> </h5>
+              <p class="card-text"><%= decoration.price %> €</p>
+            </div>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="instagram mt-5">
+     <p>Nos decorations ont été séléctionés avec soin pour vous. Nous voulons vous aider à trouver des meubles originaux et plein de charmes blablabla   blablabla blablabla blablabla blablabla blablabla blablabla
+
+Franck et Gregory</p>
+  </div>
+
+  <%= link_to 'Add a decoration', new_decoration_path %>
+</div>

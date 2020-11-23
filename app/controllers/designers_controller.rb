@@ -36,7 +36,9 @@ class DesignersController < ApplicationController
     redirect_to designer_path
   end
 
-  def furniture_params
+  private
+
+  def designer_params
     params.require(:designer).permit(:name, :description, :photo)
   end
 
