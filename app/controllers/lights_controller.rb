@@ -28,7 +28,7 @@ class LightsController < ApplicationController
   def update
     @light = Light.find(params[:id])
     @light.update(light_params)
-    redirect_to light_path(@furniture)
+    redirect_to light_path(@light)
   end
 
   def destroy
@@ -39,7 +39,7 @@ class LightsController < ApplicationController
 
   private
 
-  def furniture_params
+  def light_params
     params.require(:light).permit(:name, :description, :price, :measure, :category)
   end
 
