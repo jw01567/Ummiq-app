@@ -25,11 +25,51 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="mt-2"> <%= link_to 'Furnitures', furnitures_path %> </li>
-      <li class="mt-2 ml-3"> <%= link_to 'Accessories', accessories_path %> </li>
-      <li class="mt-2 ml-3"> <%= link_to 'Lights', lights_path %> </li>
-      <li class="mt-2 ml-3"> <%= link_to 'Decorations', decorations_path %> </li>
+
+
+      <li class="nav-item dropdown mt-2 ">
+        <p class="link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier"> Furnitures </p>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="furnitures">All Furnitures</a>
+          <a class="dropdown-item" href="#"> Tables</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown mt-2 ml-3">
+        <p class="link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier"> Accesories </p>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="accessories">All Accessories</a>
+          <a class="dropdown-item" href="#"> Plateaux</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown mt-2 ml-3">
+        <p class="link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier"> Lights </p>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="lights">All Lights</a>
+          <a class="dropdown-item" href="#"> other things</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown mt-2 ml-3">
+        <p class="link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier"> Decorations </p>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="decorations">All Decorations</a>
+          <a class="dropdown-item" href="#"> Patata</a>
+        </div>
+      </li>
+
       <li class="mt-2 ml-3"> <%= link_to 'Designers', designers_path %> </li>
+
+
+
+
+
+
+
+
+
+
       <% if user_signed_in? %>
         <li class="nav-item active mt-2 mr-3 ml-3">
           <%= link_to "Home", root_path %>
