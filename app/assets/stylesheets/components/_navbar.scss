@@ -42,6 +42,9 @@
   overflow: hidden;
   background: #f6f5f5;
   font-family: Arial;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 /* Links inside the navbar */
@@ -74,7 +77,8 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar-ws a:hover, .dropdown-ws:hover .dropbtn-ws {
-  background-color: grey;
+  background-color: #193357;
+  color: white;
 }
 
 /* Dropdown content (hidden by default) */
@@ -99,7 +103,8 @@
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content-ws a:hover {
-  background-color: #ddd;
+  background-color: #193357;
+  color: white;
 }
 
 /* Show the dropdown menu on hover */
@@ -109,4 +114,10 @@
 
 .navbar-content-ws {
   align-items: flex-end;
+  align-content: center;
+}
+
+.navbar-ws img {
+  width: 100px;
+  height: 100px;
 }
