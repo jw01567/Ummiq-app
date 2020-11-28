@@ -77,8 +77,9 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar-ws a:hover, .dropdown-ws:hover .dropbtn-ws {
-  background-color: #193357;
-  color: white;
+  background-color: #DADCE6;
+  color: #5A679A;
+  border-radius: 5px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -103,8 +104,8 @@
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content-ws a:hover {
-  background-color: #193357;
-  color: white;
+  background-color: #DADCE6;
+  color: #5A679A;
 }
 
 /* Show the dropdown menu on hover */
