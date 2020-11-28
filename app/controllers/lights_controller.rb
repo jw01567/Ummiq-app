@@ -14,8 +14,8 @@ class LightsController < ApplicationController
 
   def create
     @light = Light.new(light_params)
-    if @light.create
-      redirect_to lights_path
+    if @light.save
+      redirect_to light_path(@light)
     else
       render new
     end
