@@ -16,7 +16,7 @@ class AccessoriesController < ApplicationController
     if @accessory.save
       redirect_to accessory_path(@accessory)
     else
-      render new
+      render 'accessories/new'
     end
   end
 

@@ -17,7 +17,7 @@ class DecorationsController < ApplicationController
     if @decoration.save
       redirect_to decorations_path
     else
-      render new
+      render 'decorations/new'
     end
   end
 

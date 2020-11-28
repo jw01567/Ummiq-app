@@ -32,6 +32,8 @@ width: 100%;
   margin-right: 40px;
 }
 
+
+
 .product-cards .card-body{
   display: flex;
   justify-content: space-between;
@@ -86,4 +88,11 @@ width: 100%;
 
 .link-not-blue a:hover {
   opacity: 1;
+}
+
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

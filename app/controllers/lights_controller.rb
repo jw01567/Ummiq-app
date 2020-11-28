@@ -17,7 +17,7 @@ class LightsController < ApplicationController
     if @light.save
       redirect_to light_path(@light)
     else
-      render new
+      render 'lights/new'
     end
   end
 
