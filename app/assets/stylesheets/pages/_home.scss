@@ -4,7 +4,11 @@ width: 100%;
 }
 
 .carousel-item {
-  height: 800px;
+  height: 700px;
+}
+
+.carousel-item img {
+ object-fit: cover;
 }
 
 .carousel-item .image {
