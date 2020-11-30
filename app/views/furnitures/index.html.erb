@@ -3,14 +3,14 @@
   <div class="cards mt-4">
     <% @furnitures.each do |furniture| %>
       <%= link_to furniture_path(furniture) do %>
-        <div class="card mr-2" style="width: 20rem;">
+        <div class="card mr-2" style="width: 350px; height: 450px;">
           <% if furniture.photo.attached? %>
-            <%= cl_image_tag furniture.photo.key, height: 300, width: 300, crop: :fill %>
+            <%= cl_image_tag furniture.photo.key%>
           <% end %>
           <div class="card-body">
             <div>
               <h5 class="card-title"><%= furniture.name.capitalize %> </h5>
-              <p class="card-text"><%= furniture.price %> €</p>
+              <p class="card-text">A partir de <%= furniture.price %> €</p>
             </div>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
@@ -19,11 +19,10 @@
     <% end %>
   </div>
 
-  <div class="instagram mt-5">
-     <p>Nos meubles ont été séléctionés avec soin pour vous. Nous voulons vous aider à trouver des meubles originaux et plein de charmes blablabla   blablabla blablabla blablabla blablabla blablabla blablabla
-
-Franck et Gregory</p>
+  <div class="mt-2">
+    <%= link_to 'Add a furniture', new_furniture_path %>
   </div>
-
-  <%= link_to 'Add a furniture', new_furniture_path %>
+</div>
+<div class="instagram mt-5">
+     <p>Nos meubles ont été séléctionés avec soin pour vous. Nous voulons vous aider à trouver des meubles originaux et plein de charmes blablabla   blablabla blablabla blablabla blablabla blablabla blablabla Franck et Gregory</p>
 </div>
