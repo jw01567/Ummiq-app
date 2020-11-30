@@ -34,7 +34,7 @@ class FurnituresController < ApplicationController
   def destroy
     @furniture = Furniture.find(params[:id])
     @furniture.destroy
-    redirect_to furniture_path
+    redirect_to furnitures_path
   end
 
   private
