@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="mt-5">
+    <%= @designer.name %>
+  </h1>
+  <div class="designer-infos mt-5">
+    <% if @designer.photo.attached? %>
+      <%= cl_image_tag @designer.photo.key, height: 400, width: 700, crop: :fill %>
+    <% end %>
+    <div class="ml-5">
+      <%= @designer.description %>
+    </div>
+  </div>
+
+ <div class="mt-5">
+   <h1> Nos favoris de <%= @designer.name %> </h1>
+ </div>
+</div>
