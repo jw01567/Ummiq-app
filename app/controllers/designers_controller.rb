@@ -12,7 +12,7 @@ class DesignersController < ApplicationController
   end
 
   def create
-    @designer = Designer.new
+    @designer = Designer.new(designer_params)
     if @designer.save
       redirect_to designers_path
     else
