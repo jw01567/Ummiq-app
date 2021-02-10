@@ -4,9 +4,9 @@
   </h1>
   <div class="designer-infos mt-5">
     <% if @designer.photo.attached? %>
-      <img class="designer-bordered"
+      <img class="designer-bordered ml-5"
       <%= cl_image_tag @designer.photo.key, height: 400, width: 400, crop: :fill %>
-      >
+
     <% end %>
     <div class="ml-5">
       <%= @designer.description %>
