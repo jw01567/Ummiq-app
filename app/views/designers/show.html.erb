@@ -4,14 +4,19 @@
   </h1>
   <div class="designer-infos mt-5">
     <% if @designer.photo.attached? %>
-      <%= cl_image_tag @designer.photo.key, height: 400, width: 700, crop: :fill %>
+      <img class="designer-bordered"
+      <%= cl_image_tag @designer.photo.key, height: 400, width: 400, crop: :fill %>
+      >
     <% end %>
     <div class="ml-5">
       <%= @designer.description %>
     </div>
   </div>
 
- <div class="mt-5">
-   <h1> Nos favoris de <%= @designer.name %> </h1>
- </div>
+  <div class="mt-5">
+    <h1> Nos favoris de <%= @designer.name %> </h1>
+  </div>
+  <%= link_to designer_path(@designer), method: :delete, data: { confirm: "Are you sure?" } do %>
+    <i class=" link far fa-trash-alt" style="font-size: 25px;"></i>
+  <% end  %>
 </div>
