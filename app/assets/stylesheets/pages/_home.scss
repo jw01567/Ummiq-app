@@ -83,7 +83,7 @@ width: 100%;
 .instagram {
   background: #132743;
   color: white;
-  height: 250px;
+  height: 900px;
 }
 
 .link-not-blue a:hover {
@@ -102,4 +102,10 @@ width: 100%;
   justify-content: space-between;
   color: black;
   text-decoration: none;
+}
+
+.instagram img {
+  object-fit: cover;
+  height: 700px;
+  width: 800px;
 }
