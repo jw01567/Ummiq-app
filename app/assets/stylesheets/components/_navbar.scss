@@ -39,6 +39,10 @@
 
 /* Navbar container */
 .navbar-ws {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
   overflow: hidden;
   background: #f6f5f5;
   font-family: Arial;
