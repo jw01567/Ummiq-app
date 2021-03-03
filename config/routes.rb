@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :designers
   resources :lights
   resources :decorations
+  resources :pages, only: [:show]
 end
