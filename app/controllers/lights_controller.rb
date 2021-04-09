@@ -17,7 +17,7 @@ class LightsController < ApplicationController
     if @light.save
       redirect_to light_path(@light)
     else
-      render 'lights/new'
+      render new
     end
   end
 
@@ -40,7 +40,7 @@ class LightsController < ApplicationController
   private
 
   def light_params
-    params.require(:light).permit(:name, :description, :price, :measure, :category)
+    params.require(:light).permit(:name, :description, :price, :measure, :category, :photo)
   end
 
 end
