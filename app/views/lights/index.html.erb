@@ -2,13 +2,15 @@
 
   <div class="cards mt-4">
     <% @lights.each do |light| %>
-      <%= link_to light_path(furniture) do %>
-        <div class="card mr-2" style="width: 20rem;">
-          <img class="card-img-top" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="Card image cap">
+      <%= link_to light_path(light) do %>
+        <div class="card mr-2" style="width: 350px; height: 450px;">
+          <% if light.photo.attached? %>
+            <%= cl_image_tag light.photo.key%>
+          <% end %>
           <div class="card-body">
             <div>
               <h5 class="card-title"><%= light.name.capitalize %> </h5>
-              <p class="card-text"><%= light.price %> €</p>
+              <p class="card-text">A partir de <%= light.price %> €</p>
             </div>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
@@ -17,6 +19,10 @@
     <% end %>
   </div>
 
-  <%= link_to 'Add a light', new_light_path %>
-
+  <div class="mt-2">
+    <%= link_to 'Add a light', new_light_path %>
+  </div>
+</div>
+<div class="instagram mt-5">
+     <p>Nos meubles ont été séléctionés avec soin pour vous. Nous voulons vous aider à trouver des meubles originaux et plein de charmes blablabla   blablabla blablabla blablabla blablabla blablabla blablabla Franck et Gregory</p>
 </div>

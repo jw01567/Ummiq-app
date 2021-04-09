@@ -13,14 +13,13 @@ class DecorationsController < ApplicationController
   end
 
   def create
-    @decoration = Decoration.new
+    @decoration = Decoration.new(decoration_params)
     if @decoration.save
-      redirect_to decorations_path
+      redirect_to decoration_path(@decoration)
     else
-      render 'decorations/new'
+      render new
     end
   end
-
   def edit
     @decoration = Decoration.find(params[:id])
   end
@@ -40,7 +39,7 @@ class DecorationsController < ApplicationController
   private
 
   def decoration_params
-    params.require(:decoration).permit(:name, :description, :price, :measure, :category)
+    params.require(:decoration).permit(:name, :description, :price, :measure, :category, :photo)
   end
 
 end
