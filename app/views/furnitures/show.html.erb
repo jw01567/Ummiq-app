@@ -23,17 +23,18 @@
       <p><Strong>Service</Strong></p>
       <p>Nous vous conseillons blablabla</p>
 
-      <%= link_to furniture_path(@furniture), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class=" link far fa-trash-alt" style="font-size: 20px;"></i>
-      <% end  %>
-      <%= link_to edit_furniture_path(@furniture) do %>
-        <i class="fas fa-pen" style="font-size: 17px;"></i>
-      <% end %>
+      <div class="icons">
+        <%= link_to furniture_path(@furniture), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
+        <% end  %>
+        <%= link_to edit_furniture_path(@furniture) do %>
+          <i class="fas fa-pen" style="font-size: 17px; color: #132743;"></i>
+        <% end %>
+      </div>
     </div>
   </div>
 
-  <div class="mb-3 mt-4">
-    <%= link_to "Back", furnitures_path %>
-  </div>
+
+  <a class="btn btn-main mt-5" href="../furnitures">Back</a>
 </div>
 

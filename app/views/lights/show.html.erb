@@ -24,15 +24,13 @@
       <p>Nous vous conseillons blablabla</p>
 
       <%= link_to light_path(@light), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class=" link far fa-trash-alt" style="font-size: 20px;"></i>
+        <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
       <% end  %>
       <%= link_to edit_light_path(@light) do %>
-        <i class="fas fa-pen" style="font-size: 17px;"></i>
+        <i class="fas fa-pen" style="font-size: 17px;color: #132743;"></i>
       <% end %>
     </div>
   </div>
 
-  <div class="mb-3 mt-4">
-    <%= link_to "Back", lights_path %>
-  </div>
+  <a class="btn btn-main mt-5" href="../lights">Back</a>
 </div>
