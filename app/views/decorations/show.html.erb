@@ -24,15 +24,15 @@
       <p>Nous vous conseillons blablabla</p>
 
       <%= link_to furniture_path(@decoration), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class=" link far fa-trash-alt" style="font-size: 20px;"></i>
+        <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
       <% end  %>
       <%= link_to edit_furniture_path(@decoration) do %>
-        <i class="fas fa-pen" style="font-size: 17px;"></i>
+        <i class="fas fa-pen" style="font-size: 17px;color: #132743;"></i>
       <% end %>
     </div>
   </div>
 
-  <div class="mb-3">
-    <%= link_to "Back", decorations_path %>
-  </div>
+   <a class="btn btn-main mt-5" href="../decorations">Back</a>
+
+  <a class="btn btn-main" href="#">Book now</a>
 </div>

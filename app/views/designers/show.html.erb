@@ -56,9 +56,10 @@
 
     </div>
   <%= link_to designer_path(@designer), method: :delete, data: { confirm: "Are you sure?" } do %>
-    <i class=" link far fa-trash-alt mt-5" style="font-size: 30px;"></i>
+    <i class=" link far fa-trash-alt mt-5" style="font-size: 30px;color: #132743;"></i>
   <% end  %>
   <%= link_to edit_designer_path(@designer) do %>
-    <i class="fas fa-pen" style="font-size: 25px;"></i>
+    <i class="fas fa-pen" style="font-size: 25px;color: #132743;"></i>
   <% end %>
+  <a class="btn btn-main mt-5" href="../designers">Back</a>
 </div>
