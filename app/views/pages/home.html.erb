@@ -36,96 +36,25 @@
 
 
   <h1 class="mt-5 ml-5"> Nos coups de coeurs du moment</h1>
-
-<!--   <div class="coeurs mt-5">
-    <div class="card-coeur mr-5">
-      <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" />
-      <div class="card-coeur-infos">
-        <div>
-          <h2> Table name</h2>
-          <p class="card-coeur-pricing">£99.99</p>
-        </div>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-
-    <div class="card-coeur mr-5">
-      <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" />
-      <div class="card-coeur-infos">
-        <div>
-          <h2> Table name</h2>
-          <p class="card-coeur-pricing">£99.99</p>
-        </div>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-
-    <div class="card-coeur mr-5">
-      <img src="" />
-      <div class="card-coeur-infos">
-        <div>
-          <h2> Table name</h2>
-          <p class="card-coeur-pricing">£99.99</p>
-        </div>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div> -->
-    <div class="product-cards mt-4">
-      <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="Card image cap">
-        <div class="card-body">
-          <div>
-            <h5 class="card-title">Table name</h5>
-            <p class="card-text">£99.99.</p>
-          </div>
-          <a class="fas fa-long-arrow-alt-right"></a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="Card image cap">
-        <div class="card-body">
-          <div>
-            <h5 class="card-title">Table name</h5>
-            <p class="card-text">£99.99.</p>
-          </div>
-          <a class="fas fa-long-arrow-alt-right"></a>
-        </div>
-      </div>
-
-
-      <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="Card image cap">
-        <div class="card-body">
-          <div>
-            <h5 class="card-title">Table name</h5>
-            <p class="card-text">£99.99.</p>
-          </div>
-          <a class="fas fa-long-arrow-alt-right"></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="product-cards">
-    <%= Furniture.all.sample(3).each do |furniture| %>
-      <%= link_to furniture_path(furniture) do %>
-          <div class="card mr-2" style="width: 350px; height: 450px;">
-            <% if furniture.photo.attached? %>
-              <%= cl_image_tag furniture.photo.key%>
-            <% end %>
-            <div class="card-body">
-              <div>
-                <h5 class="card-title"><%= furniture.name.capitalize %> </h5>
-                <p class="card-text">A partir de <%= furniture.price %> €</p>
+  <div class="cards">
+    <div class="product-cards">
+      <%= Furniture.all.sample(3).each do |furniture| %>
+        <%= link_to furniture_path(furniture) do %>
+            <div class="card mr-2" style="width: 350px; height: 450px;">
+              <% if furniture.photo.attached? %>
+                <%= cl_image_tag furniture.photo.key%>
+              <% end %>
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title"><%= furniture.name.capitalize %> </h5>
+                  <p class="card-text">A partir de <%= furniture.price %> €</p>
+                </div>
+                <i class="fas fa-long-arrow-alt-right"></i>
               </div>
-              <i class="fas fa-long-arrow-alt-right"></i>
             </div>
-          </div>
+          <% end %>
         <% end %>
-      <% end %>
-
+    </div>
   </div>
 
   <div class="instagram mt-5" >
