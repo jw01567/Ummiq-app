@@ -1,19 +1,22 @@
 <div class="container">
-  <h1 class="mt-5">
-    <strong>
-    <%= @designer.name %>
-    </strong>
-  </h1>
-  <div class="designer-infos mt-5">
-    <% if @designer.photo.attached? %>
-      <img class="designer-bordered ml-5"
-      <%= cl_image_tag @designer.photo.key, height: 400, width: 400, crop: :fill %>
+  <div class="designer-infos mt-5 ml-5 ">
+    <h1 class="mt-5">
+      <strong>
+      <%= @designer.name %>
+      </strong>
+    </h1>
 
-    <% end %>
-    <div class="ml-5">
+      <% if @designer.photo.attached? %>
+        <img class="designer-bordered ml-5"
+        <%= cl_image_tag @designer.photo.key, height: 400, width: 400, crop: :fill %>
+
+      <% end %>
+  </div>
+
+    <div class="ml-5 mt-5">
       <%= @designer.description %>
     </div>
-  </div>
+
 
   <div class="mt-5">
     <h1> Nos favoris de <%= @designer.name %> </h1>
