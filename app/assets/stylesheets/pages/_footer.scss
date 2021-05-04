@@ -6,8 +6,12 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-  position: sticky;
+  position: relative;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .footer-links {
   display: flex;
@@ -27,3 +31,6 @@
   color: #D23333;
 }
 
+.body {
+  position: absolute;
+}
