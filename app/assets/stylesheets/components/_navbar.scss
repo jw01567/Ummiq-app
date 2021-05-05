@@ -39,11 +39,9 @@
 
 /* Navbar container */
 .navbar-ws {
-  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   z-index: 10;
-  overflow: hidden;
   background: #f6f5f5;
   font-family: Arial;
   display: flex;
@@ -125,4 +123,15 @@
 .navbar-ws img {
   width: 100px;
   height: 100px;
+}
+
+.lnav{
+  //float: left;
+  //display: block;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  color: #d9d9d9;
+  text-decoration: none;
+  cursor: pointer;
 }

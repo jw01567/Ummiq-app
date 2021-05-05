@@ -104,18 +104,23 @@
       </button>
       <div class="dropdown-content-ws">
         <%= link_to furnitures_path do %>
-          <p>All furnitures</p>
+          <p class="mt-3">All furnitures</p>
         <% end %>
-        <%= link_to furnitures_path(current_user, category: "Tables") do %>
-          <p>Tables</p>
+        <%= link_to furnitures_path(category: "Tables") do %>
+          <p class="mt-3">Tables</p>
         <% end %>
-
-
-        <a href="#"> Tables</a>
-        <a href="#"> Consoles</a>
-        <a href="#"> Tables Basses</a>
-        <a href="#"> Bancs</a>
-        <a href="#"> Chaises et Fauteuils</a>
+        <%= link_to furnitures_path(category: "Consoles") do %>
+          <p class="mt-3">Consoles</p>
+        <% end %>
+        <%= link_to furnitures_path(category: "Tables Basses") do %>
+          <p class="mt-3">Tables Basses</p>
+        <% end %>
+        <%= link_to furnitures_path(category: "Bancs") do %>
+          <p class="mt-3">Bancs</p>
+        <% end %>
+        <%= link_to furnitures_path(category: "Chaises et Fauteuils") do %>
+          <p class="mt-3">Chaises et Fauteuils</p>
+        <% end %>
       </div>
     </div>
 
