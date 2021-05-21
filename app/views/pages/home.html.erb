@@ -27,15 +27,10 @@
   </div>
 
 
-  <!-- truc pour trouver la langue avec la location -->
-  <p><b>I18n.locale:</b>
-    <%= I18n.locale %>
-  </p>
-  <!-- fin du truc -->
 
-
-
-  <h1 class="mt-5 ml-5"> Nos coups de coeurs du moment</h1>
+  <h1 class="mt-5 ml-5">
+   <%= t('home.heart') %>
+  </h1>
   <div class="cards">
     <div class="product-cards">
       <%= Furniture.all.sample(3).each do |furniture| %>
@@ -60,7 +55,8 @@
   <div class="instagram mt-5" >
     <h1 class=" ml-5 mt-2">
       <a class="link-not-blue" style="text-decoration:none; color:white;"
-        href="https://www.instagram.com/ummiq.design/" >Suivez nous sur Instagram
+        href="https://www.instagram.com/ummiq.design/" >
+        <%= t('home.instagram') %>
         <i class="fab fa-instagram" >
           <img class="mt-5 ml-2"<%= image_tag "Insta.png" %>
         </i>
