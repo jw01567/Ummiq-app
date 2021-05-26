@@ -40,7 +40,7 @@ en:
   navbar-ws:
     page1: "Home"
     page2: "Furnitures"
-    page3: "Accesories"
+    page3: "Accessories"
     page4: "Lights"
     page5: "Decorations"
     page6: "Artists"
@@ -53,3 +53,6 @@ en:
   footer:
     about: "About us"
     nice: "Ummiq products made with ❤️ just for you."
+
+  index:
+    text: "Our unique products have been selected especially for you by Franck and Gregory. We aim to offer blalblalalalalalallalalalaaaaaaaaa. Gregory D. and Franck W."
