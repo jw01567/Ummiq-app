@@ -1,17 +1,18 @@
 
 <div class=" navbar-Up">
     <div class="contacts ml-2">
-      <p class="mt-3">addressmail@ummiq.com</p>
-      <p>+33 6 71 48 49 20</p>
+      <p class="mt-3">contact@ummiq.com</p>
+      <p> <%=  t('navbar-up.number')  %> </p>
 
     </div>
     <div class="slogan">
-      <p class="mt-3"><strong>We illuminate your house with our UMMIQ design</strong></p>
-      <p class="ml-5"><strong>Visit our showroom in Bondues</strong></p>
+      <p class="mt-3"><strong>
+        <%= t('navbar-up.slogan') %></strong></p>
+      <p class="ml-5"><strong><%= t('navbar-up.visit') %></strong></p>
     </div>
     <div class="help mr-2">
-      <p class="mt-3 ml-5">Need Help ?</p>
-      <p>Talk with our experts</p>
+      <p class="mt-3 ml-5"> <%= t('navbar-up.help') %></p>
+      <p><%= t('navbar-up.talk') %></p>
     </div>
 </div>
 
@@ -96,10 +97,10 @@
   <%= image_tag "Ummiq-logo.jpg" %>
 
   <div class="navbar-content-ws ">
-    <a href="/">Home</a>
+    <a href="/"><%= t('navbar-ws.page1') %></a>
 
     <div class="dropdown-ws">
-      <button class="dropbtn-ws">Furnitures
+      <button class="dropbtn-ws"><%= t('navbar-ws.page2') %>
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content-ws">
@@ -124,24 +125,13 @@
       </div>
     </div>
 
-    <a href="../accessories">Accessories</a>
-    <a href="../lights">Lights</a>
-    <a href="../decorations">Decorations</a>
-
-    <div class="dropdown-ws">
-      <button class="dropbtn-ws">Decorations
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content-ws">
-        <a href="../decorations">All decorations</a>
-        <a href="#"> Tables</a>
-        <a href="#"> Chairs</a>
-      </div>
-    </div>
-    <a href="../designers">Designers</a>
+    <a href="../accessories"><%= t('navbar-ws.page3') %></a>
+    <a href="../lights"><%= t('navbar-ws.page4') %></a>
+    <a href="../decorations"><%= t('navbar-ws.page5') %></a>
+    <a href="../designers"><%= t('navbar-ws.page6') %></a>
   </div>
 
-  <a href="/pages/page">About us</a>
+  <a href="/pages/page"><%= t('navbar-ws.page7') %></a>
 
 </div>
 

@@ -30,6 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  navbar-up:
+    number: "+33 6 84 78 20 74"
+    slogan: "We illuminate your house with UMMIQ design"
+    visit: "Visit our showroom in Bondues"
+    help: "Need help ?"
+    talk: "Contact our experts"
+
+  navbar-ws:
+    page1: "Home"
+    page2: "Furnitures"
+    page3: "Accesories"
+    page4: "Lights"
+    page5: "Decorations"
+    page6: "Artists"
+    page7: "About us"
+
   home:
     heart: "Our last favorites:"
     instagram: "Follow us on Instagram "
+
+  footer:
+    about: "About us"
+    nice: "Ummiq products made with ❤️ just for you."

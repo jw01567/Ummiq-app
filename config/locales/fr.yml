@@ -1,4 +1,20 @@
 fr:
+  navbar-up:
+    number: " 06 84 78 20 74"
+    slogan: "We illuminate your house with UMMIQ design"
+    visit: "Visitez notre showroom à Bondues"
+    help: "Besoin d'aide ?"
+    talk: "Contactez nos experts"
+
+  navbar-ws:
+    page1: "Acceuil"
+    page2: "Meubles"
+    page3: "Accessoires"
+    page4: "Luminaires"
+    page5: "Décorations"
+    page6: "Artistes"
+    page7: "A propos"
+
   home:
     heart: "Nos coups de coeurs du moment:"
     instagram: "Suivez nous sur Instagram "
