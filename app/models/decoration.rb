@@ -1,6 +1,7 @@
 class Decoration < ApplicationRecord
   belongs_to :designer
 
+
   validates :name, presence: true
   validates :price, presence: true
   validates :measure, presence: true

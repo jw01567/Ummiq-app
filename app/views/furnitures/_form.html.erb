@@ -5,6 +5,7 @@
     <%= f.input :price %>
     <%= f.input :measure %>
     <%= f.input :category, collection: ['Tables', 'Consoles', 'Tables Basses', 'Bancs', 'Chaises et Fauteils'], label: 'Choose a category' %>
+    <%= f.input :designer_id, collection: @designers %>
     <%= f.input :photo, as: :file %>
     <%= f.submit%>
   <% end %>
