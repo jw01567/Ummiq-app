@@ -5,6 +5,7 @@
     <%= f.input :price %>
     <%= f.input :measure %>
     <%= f.input :category %>
+    <%= f.input :designer_id, collection: @designers %>
     <%= f.input :photo, as: :file %>
     <%= f.submit %>
   <% end %>

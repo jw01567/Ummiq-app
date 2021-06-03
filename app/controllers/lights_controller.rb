@@ -40,7 +40,7 @@ class LightsController < ApplicationController
   private
 
   def light_params
-    params.require(:light).permit(:name, :description, :price, :measure, :category, :photo)
+    params.require(:light).permit(:name, :description, :price, :measure, :category, :photo, :designer_id)
   end
 
 end

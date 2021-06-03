@@ -5,15 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-puts "Cleaning database..."
+puts "Cleaning furnitures..."
 Furniture.destroy_all
+puts "Cleaning lights..."
+Light.destroy_all
+puts "Cleaning accessories..."
+Accessory.destroy_all
+puts "Cleaning decorations..."
+Decoration.destroy_all
 
-puts "Creating furniture..."
-commode = { name: "Commode", description: "Amazing commode bleue", price: 150, measure: "100 hauteur 200 longueur", category: "rangements" }
-canape =  { name: "Canapé", description: "Woow look at this canapé", price: 300, measure: "300 longueur 100 hauteur", category: "sitting" }
 
-[ commode, canape ].each do |attributes|
-  furniture = Furniture.create!(attributes)
-  puts "Created #{furniture.name}"
-end
+
 puts "Finished!"
