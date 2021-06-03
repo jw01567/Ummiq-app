@@ -22,6 +22,7 @@
       <p> A partir de <%= @furniture.price %> €</p>
       <p><Strong>Service</Strong></p>
       <p>Nous vous conseillons blablabla</p>
+      <p>A unique piece created by <%= @furniture.designer.name %> </p>
 
       <div class="icons">
         <%= link_to furniture_path(@furniture), method: :delete, data: { confirm: "Are you sure?" } do %>
