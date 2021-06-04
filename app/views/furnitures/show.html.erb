@@ -2,7 +2,7 @@
    <h2 class="title mt-5 mb-5"> <strong> <%= @furniture.name %> </strong> </h2>
 
   <div class="furniture">
-    <div class="furnitures pictures ml-5">
+    <div class="furnitures-pictures ml-5">
       <figure class="icon-cards mt-3">
         <div class="icon-cards__content">
           <div class="icon-cards__item d-flex align-items-center justify-content-center"><img <%= cl_image_tag @furniture.photo.key %>  </div>
@@ -13,7 +13,7 @@
     </div>
 
 
-    <div class="furniture infos d-block  mt-3">
+    <div class="furniture-infos d-block  mt-3 ml-5">
       <p><Strong>Description</Strong></p>
       <p><%= @furniture.description %></p>
       <p><Strong>Measures</Strong></p>
