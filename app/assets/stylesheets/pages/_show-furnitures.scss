@@ -41,8 +41,8 @@
     bottom: 0;
     width: 60vw;
     height: 40vw;
-    max-width: 480px;
-    max-height: 350px;
+    max-width: 550px;
+    max-height: 450px;
     box-shadow: 0 5px 20px rgba(0,0,0,.1);
     border-radius: 6px;
     transform-origin: center;
@@ -65,7 +65,7 @@
 }
 
 .icon-cards__item > img {
-  height: 350px;
+  height: 450px;
   width: 100%;
   object-fit: cover;
 }
@@ -161,8 +161,16 @@
 }
 
 .furniture {
-  display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
+
+.furnitures-pictures{
+  width: 450px;
+  margin-bottom: 150px;
+  padding: 0;
+  margin-left: 50px;
+}
+
 
 
