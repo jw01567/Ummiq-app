@@ -1,5 +1,5 @@
 .container {
-  margin: 0 auto;
+
 
 }
 
@@ -161,16 +161,21 @@
 }
 
 .furniture {
-  justify-content: space-between;
-  align-items: flex-start;
+position: relative;
+top: 50%;
+left: 25%;
+
 }
 
 .furnitures-pictures{
   width: 450px;
   margin-bottom: 150px;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 1s00px;
+  max-width: auto;
 }
 
-
-
+.furniture_infos{
+  margin-right: auto;
+  margin-left: auto;
+}
