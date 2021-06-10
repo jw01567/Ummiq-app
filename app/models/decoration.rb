@@ -7,5 +7,7 @@ class Decoration < ApplicationRecord
   validates :measure, presence: true
   validates :category, presence: true
 
-  has_one_attached :photo
+  has_one_attached :photo1
+  has_one_attached :photo2
+  has_one_attached :photo3
 end
