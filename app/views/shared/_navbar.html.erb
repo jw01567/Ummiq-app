@@ -93,8 +93,10 @@
 </div> -->
 
 <div class="navbar-ws">
-
-  <%= image_tag "Ummiq-logo.jpg" %>
+  <div class="links">
+   <div>
+     <%= image_tag "Ummiq-logo.jpg" %>
+   </div>
 
   <div class="navbar-content-ws ">
     <a href="/"><%= t('navbar-ws.page1') %></a>
@@ -129,14 +131,20 @@
     <a href="../lights"><%= t('navbar-ws.page4') %></a>
     <a href="../decorations"><%= t('navbar-ws.page5') %></a>
     <a href="../designers"><%= t('navbar-ws.page6') %></a>
+    <a href="/pages/page"><%= t('navbar-ws.page7') %></a>
   </div>
 
-  <a href="/pages/page"><%= t('navbar-ws.page7') %></a>
-  <% if  user_signed_in? %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <a href="/users/sign_in"> Sign In </a>
-  <% end %>
+
+  </div>
+    <div class="sign">
+    <% if  user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <%= t('navbar-ws.sign_out')%>
+      <% end %>
+    <% else %>
+      <a href="/users/sign_in"> <%= t('navbar-ws.sign_in')%></a>
+    <% end %>
+  </div>
 
 </div>
 
