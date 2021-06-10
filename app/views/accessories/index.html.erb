@@ -21,7 +21,10 @@
   </div>
 
   <div class="mt-5">
-    <%= link_to 'Add an accessory', new_accessory_path, class: "btn-main" %>
+    <% if user_signed_in? %>
+     <%= link_to 'Add an accessory', new_accessory_path, class: "btn-main" %>
+    <% else  %>
+    <% end %>
   </div>
 </div>
 <div class="instagram mt-5">
