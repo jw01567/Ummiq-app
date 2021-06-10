@@ -132,6 +132,11 @@
   </div>
 
   <a href="/pages/page"><%= t('navbar-ws.page7') %></a>
+  <% if  user_signed_in? %>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <a href="/users/sign_in"> Sign In </a>
+  <% end %>
 
 </div>
 
