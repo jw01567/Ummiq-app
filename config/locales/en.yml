@@ -45,6 +45,8 @@ en:
     page5: "Decorations"
     page6: "Artists"
     page7: "About us"
+    sign_in: "Sign In"
+    sign_out: "Sign Out"
 
   home:
     heart: "Our last favorites:"
