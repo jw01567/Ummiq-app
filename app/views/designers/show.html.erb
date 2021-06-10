@@ -27,7 +27,7 @@
       <%= @designer.furnitures.last(3).each do |furniture|  %>
         <%= link_to furniture_path(furniture) do %>
             <div class="card mr-2" style="width: 350px; height: 450px;">
-              <% if furniture.photo.attached? %>
+              <% if furniture.photo1.attached? %>
                 <%= cl_image_tag furniture.photo.key%>
               <% end %>
               <div class="card-body">

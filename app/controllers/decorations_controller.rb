@@ -39,7 +39,7 @@ class DecorationsController < ApplicationController
   private
 
   def decoration_params
-    params.require(:decoration).permit(:name, :description, :price, :measure, :category, :photo, :designer_id)
+    params.require(:decoration).permit(:name, :description, :price, :measure, :category, :photo1, :photo2, :photo3, :designer_id)
   end
 
 end
