@@ -23,12 +23,17 @@
       <p><Strong>Service</Strong></p>
       <p>Nous vous conseillons blablabla</p>
 
-      <%= link_to light_path(@light), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
-      <% end  %>
-      <%= link_to edit_light_path(@light) do %>
-        <i class="fas fa-pen" style="font-size: 17px;color: #132743;"></i>
-      <% end %>
+      <div class="icons">
+          <% if user_signed_in? %>
+            <%= link_to light_path(@light), method: :delete, data: { confirm: "Are you sure?" } do %>
+              <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
+            <% end  %>
+            <%= link_to edit_light_path(@light) do %>
+              <i class="fas fa-pen" style="font-size: 17px;color: #132743;"></i>
+            <% end %>
+          <% else %>
+          <% end %>
+      </div>
     </div>
   </div>
 
