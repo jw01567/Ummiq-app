@@ -13,7 +13,8 @@ puts "Cleaning accessories..."
 Accessory.destroy_all
 puts "Cleaning decorations..."
 Decoration.destroy_all
-
+puts "Cleaning designers..."
+Designer.destroy_all
 
 
 puts "Finished!"

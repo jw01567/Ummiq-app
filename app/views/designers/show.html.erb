@@ -6,16 +6,29 @@
       </strong>
     </h1>
 
-      <% if @designer.photo.attached? %>
-        <img class="designer-bordered ml-5"
-        <%= cl_image_tag @designer.photo.key, height: 400, width: 400, crop: :fill %>
+      <% if @designer.photo1.attached? %>
+        <img class="designer-bordered ml-5">
+        <%= cl_image_tag @designer.photo1.key, height: 400, width: 400, crop: :fill %>
 
       <% end %>
   </div>
 
-    <div class="ml-5 mt-5">
+    <div class=" designer-text-pics ml-5 mt-5">
       <%= @designer.description %>
+      <%= cl_image_tag @designer.photo2.key, height: 300, width: 400, crop: :fill %>
+      <h1> Notre Engagement </h1>
+      <%= @designer.engagement %>
+      <%= cl_image_tag @designer.photo3.key, height: 300, width: 400, crop: :fill %>
+      <h1> Notre Guarantie </h1>
+      <%= @designer.guaranty %>
+      <%= cl_image_tag @designer.photo4.key, height: 300, width: 400, crop: :fill %>
+      <h1> Notre Histoire </h1>
+      <%= @designer.history %>
+      <h1> Developement </h1>
+      <%= @designer.development %>
     </div>
+
+
 
 
   <div class="mt-5">

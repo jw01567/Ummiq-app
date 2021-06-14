@@ -2,7 +2,14 @@
   <%= simple_form_for(@designer) do |f| %>
     <%= f.input :name %>
     <%= f.input :description %>
-    <%= f.input :photo, as: :file %>
+    <%= f.input :engagement %>
+    <%= f.input :history %>
+    <%= f.input :development %>
+    <%= f.input :guaranty %>
+    <%= f.input :photo1, as: :file %>
+    <%= f.input :photo2, as: :file %>
+    <%= f.input :photo3, as: :file %>
+    <%= f.input :photo4, as: :file %>
     <%= f.submit %>
   <% end %>
 </div>
