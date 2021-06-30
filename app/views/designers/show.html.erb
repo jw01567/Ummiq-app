@@ -1,39 +1,58 @@
 <div class="container">
   <div class="designer-infos mt-5 ml-5 ">
-    <h1 class="mt-5">
+    <h1 class=" designer-name">
       <strong>
       <%= @designer.name %>
       </strong>
     </h1>
 
       <% if @designer.photo1.attached? %>
-        <img class="designer-bordered ml-5">
+        <img class="designer-bordered ml-5"
         <%= cl_image_tag @designer.photo1.key, height: 400, width: 400, crop: :fill %>
+
       <% end %>
   </div>
 
+  <div class="designer-texts">
     <div class=" designer-description ml-5 mt-5">
-      <%= @designer.description %>
-      <%= cl_image_tag @designer.photo2.key, height: 300, width: 400, crop: :fill %>
+      <p>
+        <%= @designer.description %>
+      </p>
+      <div class=" image-2 mt-5 mb-5">
+        <%= cl_image_tag @designer.photo2.key%>
+      </div>
     </div>
     <div  class=" designer-engagement ml-5 mt-5">
       <h1> Notre Engagement </h1>
-      <%= @designer.engagement %>
-      <%= cl_image_tag @designer.photo3.key, height: 300, width: 400, crop: :fill %>
+      <p>
+        <%= @designer.engagement %>
+      </p>
+      <div class="image-3 mt-5 mb-5">
+        <%= cl_image_tag @designer.photo3.key, height: 500, width: 600, crop: :fill %>
+      </div>
     </div>
     <div class="designer-guaranty ml-5 mt-5">
       <h1> Notre Guarantie </h1>
-      <%= @designer.guaranty %>
-      <%= cl_image_tag @designer.photo4.key, height: 300, width: 400, crop: :fill %>
+      <p>
+        <%= @designer.guaranty %>
+      </p>
+      <div class="image-4 mt-5 mb-5">
+        <%= cl_image_tag @designer.photo4.key, height: 500, width: 600, crop: :fill %>
+      </div>
     </div>
     <div class="designer-story mt-5 ml-5">
       <h1> Notre Histoire </h1>
-      <%= @designer.history %>
+      <p>
+        <%= @designer.history %>
+      </p>
     </div>
     <div class="designer-development d-block mt-5 ml-5">
       <h1> Developement </h1>
-      <%= @designer.development %>
+      <p>
+        <%= @designer.development %>
+      </p>
     </div>
+  </div>
 
 
 
