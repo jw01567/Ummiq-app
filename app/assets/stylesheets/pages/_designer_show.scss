@@ -2,10 +2,51 @@
   display: flex;
 }
 
+.designer-name{
+ margin-top: 150px
+}
+
 .designer-bordered {
   width: 400px;
   height: 400px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
+}
+
+.designer-texts {
+  margin: 0px auto;
+}
+
+.image-2 {
+  height: 500px;
+  width: 600px ;
+  margin-left: 180px;
+}
+
+.image-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.image-3 {
+  height: 500px;
+  width: 600px ;
+  margin-left: 180px;
+}
+
+.image-3 img {
+  width: 100%;
+  height: auto;
+}
+
+.image-4 {
+  height: 500px;
+  width: 600px ;
+  margin-left: 180px;
+}
+
+.image-4 img {
+  width: 100%;
+  height: auto;
 }
