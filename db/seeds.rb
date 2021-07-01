@@ -15,6 +15,18 @@ puts "Cleaning decorations..."
 Decoration.destroy_all
 puts "Cleaning designers..."
 Designer.destroy_all
+puts "Cleaning Users"
+User.destroy_all
 
 
 puts "Finished!"
+
+puts " Creating users "
+
+user_1 = User.new(email: 'franck.welcomme@ummiq.com', password: 'Jeffhealey59')
+user_1.save!
+
+user_2 = User.new(email: 'contact@ummiq.com', password: 'Greg59')
+user_2.save!
+
+puts "Done!"
