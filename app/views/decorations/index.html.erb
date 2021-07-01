@@ -4,8 +4,8 @@
     <% @decorations.each do |decoration| %>
       <%= link_to decoration_path(decoration) do %>
         <div class="card mr-2" style="width: 350px; height: 450px;">
-          <% if decoration.photo.attached? %>
-            <%= cl_image_tag decoration.photo.key%>
+          <% if decoration.photo1.attached? %>
+            <%= cl_image_tag decoration.photo1.key%>
           <% end %>
           <div class="card-body">
             <div>
@@ -27,6 +27,6 @@
   </div>
 </div>
 <div class="index-text mt-5">
-    <H1><%= t('index.text') %></H1>
+    <H2><%= t('index.text') %>.</H2>
 </div>
 

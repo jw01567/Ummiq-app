@@ -14,15 +14,13 @@
 
 
     <div class="furniture infos d-block  mt-3">
-      <p><Strong>Description</Strong></p>
-      <p><%= @light.description %></p>
       <p><Strong>Measures</Strong></p>
       <p><%= @light.measure %></p>
       <p><Strong>Price</Strong></p>
       <p> A partir de <%= @light.price %> €</p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
-      <p>A unique piece created by <%= @furniture.designer.name %> </p>
+      <p>A unique piece created by <%= @light.designer.name %> </p>
 
       <div class="icons">
           <% if user_signed_in? %>
@@ -39,4 +37,5 @@
   </div>
 
   <a class="btn btn-main mt-5" href="../lights">Back</a>
+  <a class="btn btn-main mt-5" href="../pages/show">Book now</a>
 </div>
