@@ -2,18 +2,19 @@
    <h2 class="title mt-5 mb-5"> <strong> <%= @accessory.name %> </strong> </h2>
 
   <div class="furniture">
-    <div class="furnitures pictures ml-5">
+    <div class="furnitures-pictures ml-5">
       <figure class="icon-cards mt-3">
         <div class="icon-cards__content">
           <div class="icon-cards__item d-flex align-items-center justify-content-center"><img <%= cl_image_tag @accessory.photo1.key %>  </div>
           <div class="icon-cards__item d-flex align-items-center justify-content-center"><img <%= cl_image_tag @accessory.photo2.key %>  </div>
           <div class="icon-cards__item d-flex align-items-center justify-content-center"><img <%= cl_image_tag @accessory.photo3.key %>  </div>
+
         </div>
       </figure>
     </div>
 
 
-    <div class="furniture infos d-block  mt-3">
+    <div class="furniture-infos d-block  mt-3 ml-5">
       <p><Strong>Measures</Strong></p>
       <p><%= @accessory.measure %></p>
       <p><Strong>Price</Strong></p>
@@ -28,14 +29,12 @@
             <i class=" link far fa-trash-alt" style="font-size: 20px;color: #132743;"></i>
           <% end  %>
           <%= link_to edit_accessory_path(@accessory) do %>
-            <i class="fas fa-pen" style="font-size: 17px;color: #132743;"></i>
+            <i class="fas fa-pen" style="font-size: 17px; color: #132743;"></i>
           <% end %>
         <% else %>
         <% end %>
       </div>
     </div>
+    <a class="btn btn-main mt-5" href="../lights">Back</a>
+    <a class="btn btn-main mt-5" href="../pages/show">Book now</a>
   </div>
-
-  <a class="btn btn-main mt-5" href="../accessories">Back</a>
-  <a class="btn btn-main mt-5" href="../pages/show">Book now</a>
-</div>
