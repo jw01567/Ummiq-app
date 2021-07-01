@@ -14,15 +14,13 @@
 
 
     <div class="furniture infos d-block  mt-3">
-      <p><Strong>Description</Strong></p>
-      <p><%= @decoration.description %></p>
       <p><Strong>Measures</Strong></p>
       <p><%= @decoration.measure %></p>
       <p><Strong>Price</Strong></p>
       <p> A partir de <%= @decoration.price %> €</p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
-      <p>A unique piece created by <%= @furniture.designer.name %> </p>
+      <p>A unique piece created by <%= @decoration.designer.name %> </p>
 
 
      <div class="icons">
@@ -41,5 +39,5 @@
 
    <a class="btn btn-main mt-5" href="../decorations">Back</a>
 
-  <a class="btn btn-main" href="#">Book now</a>
+   <a class="btn btn-main mt-5" href="../pages/show">Book now</a>
 </div>
