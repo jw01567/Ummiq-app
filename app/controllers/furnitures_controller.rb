@@ -17,7 +17,7 @@ class FurnituresController < ApplicationController
     if @furniture.save
       redirect_to furniture_path(@furniture)
     else
-      render new
+      render partial: 'furnitures/new'
     end
   end
 
