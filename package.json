@@ -2,7 +2,7 @@
   "name": "Ummiq_app",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
