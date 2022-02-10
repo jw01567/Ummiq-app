@@ -10,12 +10,10 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0",
-  },
-
-  "engines": {
+    "engines": {
     "node": "16.x"
+    },
   },
-
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
