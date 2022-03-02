@@ -38,3 +38,8 @@ Tous les meubles peuvent être déclinés sur commande selon les mesures, les co
     find: "Ou nous trouver?"
     phone: "Téléphone:"
     adress: "Adresse du showroom:"
+
+  show:
+    categorie: "Categorie"
+    prix: "Prix"
+    mesures: "Mesures"

@@ -15,10 +15,10 @@
 
 
     <div class="furniture-infos d-block  mt-3 ml-5">
-      <p><Strong>Measures</Strong></p>
+      <p><Strong><%= t('show.mesures') %></Strong></p>
       <p><%= @decoration.measure %></p>
-      <p><Strong>Price</Strong></p>
-      <p> A partir de <%= @decoration.price %> €</p>
+      <p><Strong><%= t('show.prix') %></Strong></p>
+      <p> A partir de <%= @decoration.price %> € (Hors transport) </p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
       <p>A unique piece created by <%= @decoration.designer.name %> </p>
