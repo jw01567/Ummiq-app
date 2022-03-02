@@ -1,6 +1,6 @@
 <div class="container">
   <div class="designer-infos mt-5 ml-5 ">
-    <h1 class=" designer-name">
+    <h1 class=" designer-name mr-5">
       <strong>
       <%= @designer.name %>
       </strong>
@@ -28,7 +28,7 @@
         <%= @designer.engagement %>
       </p>
       <div class="image-3 mt-5 mb-5">
-        <%= cl_image_tag @designer.photo3.key, height: 500, width: 600, crop: :fill %>
+        <%= cl_image_tag @designer.photo3.key, height: 500, width: 800, crop: :fill %>
       </div>
     </div>
     <div class="designer-guaranty ml-5 mt-5">
@@ -37,7 +37,7 @@
         <%= @designer.guaranty %>
       </p>
       <div class="image-4 mt-5 mb-5">
-        <%= cl_image_tag @designer.photo4.key, height: 500, width: 600, crop: :fill %>
+        <%= cl_image_tag @designer.photo4.key, height: 500, width: 800, crop: :fill %>
       </div>
     </div>
     <div class="designer-story mt-5 ml-5">

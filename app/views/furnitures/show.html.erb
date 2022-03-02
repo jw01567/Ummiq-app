@@ -15,12 +15,12 @@
 
 
     <div class="furniture-infos d-block  mt-3 ml-5">
-      <p><Strong>Category</Strong></p>
+      <p><Strong><%= t('show.categorie') %></Strong></p>
       <p><%= @furniture.category %></p>
-      <p><Strong>Measures</Strong></p>
+      <p><Strong><%= t('show.mesures') %></Strong></p>
       <p><%= @furniture.measure %></p>
-      <p><Strong>Price</Strong></p>
-      <p> A partir de <%= @furniture.price %> €</p>
+      <p><Strong><%= t('show.prix') %></Strong></p>
+      <p> A partir de <%= @furniture.price %> € (Hors transport) </p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
       <p>A unique piece created by <%= @furniture.designer.name %> </p>
