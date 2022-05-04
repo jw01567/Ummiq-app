@@ -18,7 +18,7 @@
       <p><Strong><%= t('show.categorie') %></Strong></p>
       <p><%= @light.measure %></p>
       <p><Strong><%= t('show.prix') %></Strong></p>
-      <p> A partir de <%= @light.price %> €/pièce (Hors transport) </p>
+      <p> <%= t('index.prix') %> <%= @light.price %> €/pièce (Hors transport) </p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
       <p>A unique piece created by <%= @light.designer.name %> </p>
