@@ -20,7 +20,7 @@
       <p><Strong><%= t('show.mesures') %></Strong></p>
       <p><%= @furniture.measure %></p>
       <p><Strong><%= t('show.prix') %></Strong></p>
-      <p> A partir de <%= @furniture.price %> €/pièce (Hors transport) </p>
+      <p> <%= t('index.prix') %> <%= @furniture.price %> €/pièce (Hors transport) </p>
       <p><Strong>Service</Strong></p>
       <p> <%= t('index.text') %> </p>
       <p>A unique piece created by <%= @furniture.designer.name %> </p>

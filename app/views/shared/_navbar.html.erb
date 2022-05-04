@@ -128,13 +128,41 @@
         <% end %>
       </div>
     </div -->
+    <% if I18n.locale == :fr %>
+      <a href="../furnitures"><%= t('navbar-ws.page2') %></a>
+    <% else %>
+      <a href="../../en/furnitures/"><%= t('navbar-ws.page2') %></a>
+    <% end  %>
 
-    <a href="../furnitures"><%= t('navbar-ws.page2') %></a>
-    <a href="../accessories"><%= t('navbar-ws.page3') %></a>
-    <a href="../lights"><%= t('navbar-ws.page4') %></a>
-    <a href="../decorations"><%= t('navbar-ws.page5') %></a>
-    <a href="../designers"><%= t('navbar-ws.page6') %></a>
-    <a href="/pages/page"><%= t('navbar-ws.page7') %></a>
+    <% if I18n.locale == :fr %>
+      <a href="../accessories"><%= t('navbar-ws.page3') %></a>
+    <% else %>
+      <a href="../../en/accessories/"><%= t('navbar-ws.page3') %></a>
+    <% end  %>
+
+    <% if I18n.locale == :fr %>
+      <a href="../lights"><%= t('navbar-ws.page4') %></a>
+    <% else %>
+      <a href="../../en/lights/"><%= t('navbar-ws.page4') %></a>
+    <% end  %>
+
+      <% if I18n.locale == :fr %>
+      <a href="../decorations"><%= t('navbar-ws.page5') %></a>
+    <% else %>
+      <a href="../../en/decorations/"><%= t('navbar-ws.page5') %></a>
+    <% end  %>
+
+    <% if I18n.locale == :fr %>
+      <a href="../designers"><%= t('navbar-ws.page6') %></a>
+    <% else %>
+      <a href="../../en/designers/"><%= t('navbar-ws.page6') %></a>
+    <% end  %>
+
+    <% if I18n.locale == :fr %>
+      <a href="../pages/page"><%= t('navbar-ws.page7') %></a>
+    <% else %>
+      <a href="../../en/pages/page"><%= t('navbar-ws.page7') %></a>
+    <% end  %>
   </div>
 
 
